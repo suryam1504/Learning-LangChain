@@ -1,4 +1,4 @@
-from langchain_openai import OpenAI # integration package between 
+from langchain_openai import OpenAI # integration package between OpenAI and LangChain
 from dotenv import load_dotenv # to load environment variables from .env file
 
 load_dotenv() # load environment variables from .env file
