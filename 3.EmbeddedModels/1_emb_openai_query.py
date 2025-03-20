@@ -6,9 +6,9 @@ load_dotenv()
 # put which emb model to use (https://platform.openai.com/docs/guides/embeddings) and how many dimensions to use (1536 for small, 3072 for large)
 embedding = OpenAIEmbeddings(model='text-embedding-3-small', dimensions=32)
 
-# result = embedding.embed_query("Delhi is the capital of India")
+result = embedding.embed_query("Delhi is the capital of India")
 
-# print(str(result))
+print(str(result))
 
 # [0.16083911061286926, 0.09522069990634918, 0.1782715618610382, 0.08200930804014206, -0.2175220102071762, 0.20425580441951752, -0.09483696520328522, 
 # 0.3076445460319519, -0.10053814947605133, 0.003926414996385574, 0.15437045693397522, 0.2672977149486542, -0.24690502882003784, 0.019049622118473053, 
