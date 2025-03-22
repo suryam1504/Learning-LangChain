@@ -71,4 +71,4 @@ Review by Suryam Vivek Gupta
 """)
 
 print(result) # this is python dictionary
-print(result["key_themes"]) # this is list
+print(result["key_themes"]) 

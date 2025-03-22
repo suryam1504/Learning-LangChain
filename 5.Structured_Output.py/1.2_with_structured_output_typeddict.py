@@ -9,24 +9,24 @@ model = ChatOpenAI(model='gpt-4o-mini')
 # 1. Simple TypedDict
 
 # schema
-# class Review(TypedDict):
-#     summary: str
-#     sentiment: str
+class Review(TypedDict):
+    summary: str
+    sentiment: str
 
 
-# structured_model = model.with_structured_output(Review)
+structured_model = model.with_structured_output(Review)
 
-# result = structured_model.invoke("The movie subjectively was really enjoyable, but objectively didn't have the best flow. The acting wasn't too good, but I dont' care for that much as long as the story is interesting.")
+result = structured_model.invoke("The movie subjectively was really enjoyable, but objectively didn't have the best flow. The acting wasn't too good, but I dont' care for that much as long as the story is interesting.")
 
-# print(result)
+print(result)
 
 # output
 # {'summary': 'The movie was enjoyable on a personal level, despite its flaws in flow and acting. The story kept me engaged, which outweighed the shortcomings in performance.', 'sentiment': 'mixed'}
 
 # now since this is a dictionary, we can systmatically access key value pairs
 
-# print(result['summary'])
-# print(result['sentiment'])
+print(result['summary'])
+print(result['sentiment'])
 
 
 # note that nowhere in our prompt did we mention the words summary or sentiment, yet we get them because we call invoke on structured_model, which has the class Review as its input so behind the scenes a new prompt is generated which lets the LLM know that it needs to output a json with the keys summary and sentiment.
@@ -39,16 +39,16 @@ model = ChatOpenAI(model='gpt-4o-mini')
 # 2. Annotated TypedDict - Explicitly mentioning what the keys should do
 
 #schema
-# class ExplicitReview(TypedDict):
-#     summary: Annotated[str, "A summary of the movie, spoken like a pirate."]
-#     sentiment: Annotated[int, "Return sentiment of the movie on a scale of 1-5, 1 being the worst, 3 being neutral, and 5 being the best."]
+class ExplicitReview(TypedDict):
+    summary: Annotated[str, "A summary of the movie, spoken like a pirate."]
+    sentiment: Annotated[int, "Return sentiment of the movie on a scale of 1-5, 1 being the worst, 3 being neutral, and 5 being the best."]
 
 
-# explicit_structured_model = model.with_structured_output(ExplicitReview)
+explicit_structured_model = model.with_structured_output(ExplicitReview)
 
-# result1 = explicit_structured_model.invoke("The movie subjectively was really enjoyable, but objectively didn't have the best flow. The acting wasn't too good, but I dont' care for that much as long as the story is interesting.")
+result1 = explicit_structured_model.invoke("The movie subjectively was really enjoyable, but objectively didn't have the best flow. The acting wasn't too good, but I dont' care for that much as long as the story is interesting.")
 
-# print(result1)
+print(result1)
 
 # output
 # {'summary': 'The movie was enjoyable on a personal level, but it had some issues with pacing and acting. Despite the flaws in performance, the engaging story kept my attention.', 'sentiment': 2}
