@@ -32,3 +32,9 @@ representation of the context of the query/document) with various dimensions in 
 - Dynamic prompts for a list of messages using ChatPromptTemplate (dynamic prompt, see 7_chatbot_memory_dyanmic.py)
 - Using Message_Placeholder to retrieve an older conversation which acts as the contextual information of a brand new conversation (see 8_Message_Placeholder)
  
+5. Structured Output
+
+- Explored how to make LLMs interact with databases, APIs, and other systems using structured responses like JSON instead of unstructured text, using:
+- TypedDict (defining a structured dictionary with key value pairs as the LLM output): Simple and Annotated, with Literal and Optional Arguments (see 1.2)
+- Pydantic (data validation and data parsing library for python): Basic Example, Setting default values, Handling Optional Fields, Coerce, (handling implicit typecasting), EmailStr (to handle email validation), Field (default values, put contraints, write descriptions, regex, etc.) (see 2.2)
+- JSON Schema (see 3.2)
