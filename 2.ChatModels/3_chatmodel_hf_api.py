@@ -40,7 +40,7 @@ result1 = model1.invoke("Give me names of 3 colors and what will I get if I mix 
 print(result1.content)
 
 
-
+# all these sometimes work, but most of the times it returns TimeOutError, which means API is not responsing which is always a problem with open source models.
 
 
 
