@@ -41,22 +41,21 @@ print("--------------------------------")
 # Give me name, age, and gender of Natalie Portman.
 #  Return a JSON object.
 
-# result1 = model.invoke(prompt1)
-# final_result1 = parser.parse(result1.content)
-# type_of_result1 = type(final_result1)
-# print(result1)  # this is the raw output from the model about Taylor Swift (another sampling gave TS again with age 34 tho, and another gave Emma Watson)
-# print(final_result1) # {'name': 'Taylor Swift', 'age': 33, 'gender': 'Female'}
-# print(type_of_result1) # <class 'dict'>
+result1 = model.invoke(prompt1)
+final_result1 = parser.parse(result1.content)
+type_of_result1 = type(final_result1)
+print(result1)  # this is the raw output from the model about Taylor Swift (another sampling gave TS again with age 34 tho, and another gave Emma Watson)
+print(final_result1) # {'name': 'Taylor Swift', 'age': 33, 'gender': 'Female'}
+print(type_of_result1) # <class 'dict'>
 
-# print("--------------------------------")
+print("--------------------------------")
 
-# result2 = model.invoke(prompt2)
-# final_result2 = parser.parse(result2.content)
-# type_of_result2 = type(final_result2)
-# print(result2)
-# print(final_result2) # {'name': 'Natalie Portman', 'age': 42, 'gender': 'Female'}
-# print(type_of_result2) # <class 'dict'>
-
+result2 = model.invoke(prompt2)
+final_result2 = parser.parse(result2.content)
+type_of_result2 = type(final_result2)
+print(result2)
+print(final_result2) # {'name': 'Natalie Portman', 'age': 42, 'gender': 'Female'}
+print(type_of_result2) # <class 'dict'>
 
 
 
