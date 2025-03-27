@@ -29,7 +29,7 @@ print(result)
 
 # Trying other parameters (https://api.python.langchain.com/en/latest/llms/langchain_openai.llms.base.OpenAI.html)
 
-llm1 = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0.9, max_tokens=100) 
+llm1 = OpenAI(model="gpt-3.5-turbo-instruct", temperature=0.9, max_tokens=100)  # temperature = 1 is default
 result1 = llm1.invoke("Write a haiku about cats") 
 print(result1)
 
