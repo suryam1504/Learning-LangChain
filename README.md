@@ -47,3 +47,12 @@ Worked with the following 4 most important output parsers out of the many which 
 - JSON Output Parser: For JSON output, but doesn't enforce a schema and leaves things on the LLM to decide
 - Structured Output Parser: Structured JSON format output which conforms to a pre-defined schema, but doesn't have data validation (eg. age should strictly be int or sentiment is strictly either pos or neg) capabilities
 - Pydantic Output Parser: Structured JSON format with pre-defined schema and data validation enforced
+
+7. Chains
+
+Explored various types of chains to efficiently talk to LLMs:
+
+- Simple Chain
+- Sequential Chain
+- Parallel Chain
+- Conditional Chain
