@@ -48,10 +48,4 @@ print(final_chain.invoke({"topic":'Python vs C++'}))
 
 
 
-
-
-
-
-
-
 # another example could be where we use an llm to categorize an email into complaint, refund, or general query, and accordingly return an output

@@ -35,6 +35,7 @@ representation of the context of the query/document) with various dimensions in 
 5. Structured Output
 
 Explored how to make LLMs interact with databases, APIs, and other systems using structured responses like JSON instead of unstructured text, using:
+
 - TypedDict (defining a structured dictionary with key value pairs as the LLM output): Simple and Annotated, with Literal and Optional Arguments (see 1.2)
 - Pydantic (data validation and data parsing library for python): Basic Example, Setting default values, Handling Optional Fields, Coerce, (handling implicit typecasting), EmailStr (to handle email validation), Field (default values, put contraints, write descriptions, regex, etc.) (see 2.2)
 - JSON Schema (see 3.2)
@@ -56,3 +57,23 @@ Explored various types of chains to efficiently talk to LLMs:
 - Sequential Chain
 - Parallel Chain
 - Conditional Chain
+
+8. Runnables
+
+Explored various types of runnables and how to connect and use them together efficiently:
+
+- Runnable Sequence
+- Runnable Parallel
+- Runnable Passthrough
+- Runnable Lambda
+- Runnable Branch
+
+9. Document Loaders
+
+Explored various types of document loaders to load data from several platforms in various formats and extract their textual content, and then use LLMs to ask questions based on these documents:
+
+- Text Loader
+- PyPDFLoader
+- Directory Loader
+- Webbase Loader
+- CSV Loader
