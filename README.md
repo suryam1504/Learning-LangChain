@@ -77,3 +77,12 @@ Explored various types of document loaders to load data from several platforms i
 - Directory Loader
 - Webbase Loader
 - CSV Loader
+
+10. Text Splitting
+
+Explored various types of text splitters, which helps in parallelization of workflow and retaining better contextual information, and hence returns better results when passed through LLMs. Worked with following text splitters:
+
+- Length Based
+- Text Structure Based
+- Document Structure Based (Eg. Python Codes and Markup languages)
+- Semantic Meaning Based
