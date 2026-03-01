@@ -1,6 +1,6 @@
 # see text example below to understand the type of texts where this is helpful
 
-# how this works: emb of every sentence is calculated (say s1 s2 s3.............), then cosine similarity calculated between s1 and s2, if score is high they are merged, then between s2 ans s3, if high then merged (i guess s1 is also medged with all this), b/w s3 and s4, if score low then this is decided as the breaking point
+# how this works: emb of every sentence is calculated (say s1 s2 s3.............), then cosine similarity calculated between s1 and s2, if score is high they are merged, then between s2 ans s3, if high then merged (i guess s1 is also merged with all this), b/w s3 and s4, if score low then this is decided as the breaking point
 
 # note: langchain documentation (https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb) says this tho - At a high level, this splits into sentences, then groups into groups of 3 sentences, and then merges one that are similar in the embedding space.
 

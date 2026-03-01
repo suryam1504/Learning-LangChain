@@ -21,4 +21,4 @@ print(chunks)
 # 6
 # ['Machine learning (ML) is a field of study in artificial intelligence concerned with the development', 'and study of statistical algorithms that can learn from data and generalise to unseen data, and', 'thus perform tasks without explicit instructions.', 'Within a subdiscipline in machine learning, advances in the field of deep learning have allowed', 'neural networks, a class of statistical algorithms, to surpass many previous machine learning', 'approaches in performance.']
 
-# mostly this is used, ass the way of these chunk breaks is also how usually context is broken in real life writings
+# mostly this is used, as the way of these chunk breaks is also how usually context is broken in real life writings

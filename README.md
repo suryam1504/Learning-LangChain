@@ -86,3 +86,12 @@ Explored various types of text splitters, which helps in parallelization of work
 - Text Structure Based
 - Document Structure Based (Eg. Python Codes and Markup languages)
 - Semantic Meaning Based
+
+11. Vector Store and Database
+
+Explored vector stores and database (vector store with database like capabilities like CRUD, sql queries, etc.), which is essentially a light-weight library to store vectors (numeric embeddings of texts) and helps with its quick retrieval and similarity search. Worked with **chromadb** vector store and implemented these common operations: 
+
+- Creating documents with content and metadata 
+- Instantiating a Chroma vector store instance and adding documents to it (this step gives each doc a unique id and converts them to embeddings and stores it)
+- Similartiy search of top k documents (with and without similarity score) with a given query or filter
+- Updating and deleting documents in vector store
