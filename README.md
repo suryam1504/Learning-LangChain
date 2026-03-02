@@ -98,7 +98,8 @@ Explored vector stores and database (vector store with database like capabilitie
 
 12. Retrievers
 
-Explored various types of retrievers, a component of Langchain which helps fetch multiple relevant documents from a data source from a user's query. 
+Explored various types of retrievers, a component of Langchain which helps fetch multiple relevant documents from a data source from a user's query. Explored following retrievers, which are mostly based on:
 
-Retrievers could be based on i. Data Source (Wikipedia, Arxiv, Vector Store), and ii. Search Strategy (Maximum Marginal Relevance (MMR), Multi-query, Contextual Compression)
+- Data Source: Wikipedia, Vector Store
+- Search Strategy: Maximum Marginal Relevance (MMR), Multi-query, Contextual Compression
 
