@@ -95,3 +95,10 @@ Explored vector stores and database (vector store with database like capabilitie
 - Instantiating a Chroma vector store instance and adding documents to it (this step gives each doc a unique id and converts them to embeddings and stores it)
 - Similartiy search of top k documents (with and without similarity score) with a given query or filter
 - Updating and deleting documents in vector store
+
+12. Retrievers
+
+Explored various types of retrievers, a component of Langchain which helps fetch multiple relevant documents from a data source from a user's query. 
+
+Retrievers could be based on i. Data Source (Wikipedia, Arxiv, Vector Store), and ii. Search Strategy (Maximum Marginal Relevance (MMR), Multi-query, Contextual Compression)
+
