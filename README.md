@@ -103,3 +103,9 @@ Explored various types of retrievers, a component of Langchain which helps fetch
 - Data Source: Wikipedia, Vector Store
 - Search Strategy: Maximum Marginal Relevance (MMR), Multi-query, Contextual Compression
 
+13. Retrieval Augmented Generation (RAG)
+
+Understood the concept of RAG and how it helps with an LLM being able to answer private/personal data by using some relevant documents from an external data source.
+
+- Built a simple Youtube Chatbot, where you can give the youtube video link and then ask questions to the LLM about the video.
+
