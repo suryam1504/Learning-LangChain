@@ -23,8 +23,8 @@ prompt2 = PromptTemplate(
 )
 
 parallel_chain = RunnableParallel({
-    'tweet': RunnableSequence(prompt1, llm,parser),
-    'linkedin': RunnableSequence(prompt2, llm,parser) 
+    'tweet': RunnableSequence(prompt1, llm, parser),
+    'linkedin': RunnableSequence(prompt2, llm, parser) 
 })
 
 result = parallel_chain.invoke({'topic':'Disadvantages of using AI'})
