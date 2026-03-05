@@ -109,3 +109,12 @@ Understood the concept of RAG and how it helps with an LLM being able to answer 
 
 - Built a simple Youtube Chatbot, where you can give the youtube video link and then ask questions to the LLM about the video.
 
+14. Tools and Tool Calling
+
+Explored various types tools, which help LLMs go beyond their reasoning and language generation capabilities to autonomously take decisions and perform tasks and actions. Implemented the following - 
+
+- Built-in Tools: Duckduckgo search, Shell tool, etc.
+- Custom Tools and how to create them using: @tool decorator, StructuredTool, BaseTool, etc.
+
+Also explored Toolkits.
+
