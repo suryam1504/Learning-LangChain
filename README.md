@@ -111,10 +111,9 @@ Understood the concept of RAG and how it helps with an LLM being able to answer 
 
 14. Tools and Tool Calling
 
-Explored various types tools, which help LLMs go beyond their reasoning and language generation capabilities to autonomously take decisions and perform tasks and actions. Implemented the following - 
+Explored the concept tools, which help LLMs go beyond their reasoning and language generation capabilities to autonomously take decisions and perform tasks and actions. Implemented the following - 
 
-- Built-in Tools: Duckduckgo search, Shell tool, etc.
-- Custom Tools and how to create them using: @tool decorator, StructuredTool, BaseTool, etc.
-
-Also explored Toolkits.
+- Tools: Built-in Tools (Duckduckgo search, Shell tool, etc.), Custom Tools and how to create them (using @tool decorator, StructuredTool, BaseTool, etc.), Toolkits
+- Tool Binding and Tool Calling: Binding a tool with an LLM and then calling it when needed appropriately by the query using **tool_calls** argument
+- Built a real time currency conversion using these concepts
 
