@@ -113,7 +113,15 @@ Understood the concept of RAG and how it helps with an LLM being able to answer 
 
 Explored the concept tools, which help LLMs go beyond their reasoning and language generation capabilities to autonomously take decisions and perform tasks and actions. Implemented the following - 
 
-- Tools: Built-in Tools (Duckduckgo search, Shell tool, etc.), Custom Tools and how to create them (using @tool decorator, StructuredTool, BaseTool, etc.), Toolkits
-- Tool Binding and Tool Calling: Binding a tool with an LLM and then calling it when needed appropriately by the query using **tool_calls** argument
-- Built a real time currency conversion using these concepts
+- Tools: Built-in Tools (Duckduckgo search, Shell tool, etc.), Custom Tools and how to create them (using @tool decorator, StructuredTool, BaseTool, etc.), Toolkits (see 14.1)
+- Tool Binding and Tool Calling: Binding a tool with an LLM and then calling it when needed appropriately by the query using **tool_calls** argument (see 14.2)
+- Built a real time currency conversion using these concepts (see 14.3)
+
+15. AI Agents
+
+Understood Agent = LLM + Tools concept and created a simple search tool + weather check AI agent using ReAct (Reasoning + Action) pattern, which follows:
+
+Reasoning --> Action --> Observation --> Repeat this until final answer.
+
+Also understood how [values] and [updates] save states work, which acts as a memory of messages for the LLM.
 
